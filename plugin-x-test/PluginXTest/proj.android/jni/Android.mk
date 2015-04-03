@@ -25,9 +25,14 @@ LOCAL_STATIC_LIBRARIES := cocos2dx_static
 # _COCOS_LIB_ANDROID_BEGIN
 # _COCOS_LIB_ANDROID_END
 
+
+LOCAL_WHOLE_STATIC_LIBRARIES := PluginProtocolStatic
+
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,.)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END
+
+$(call import-module,protocols/android)
