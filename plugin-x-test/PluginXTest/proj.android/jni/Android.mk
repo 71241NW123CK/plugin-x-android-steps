@@ -5,6 +5,7 @@ include $(CLEAR_VARS)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/external)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/cocos)
+$(call import-add-path,$(LOCAL_PATH)/../../cocos2d/plugin/publish)
 
 LOCAL_MODULE := cocos2dcpp_shared
 
@@ -36,3 +37,4 @@ $(call import-module,.)
 # _COCOS_LIB_IMPORT_ANDROID_END
 
 $(call import-module,protocols/android)
+#$(call import-module,cocos)
